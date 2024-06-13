@@ -225,7 +225,7 @@ public class PracticePractice {
 
     // "Remember folks, code duplication is a crime.
     // So I am a criminal."
-    // - Ael
+    // - Terria
     private int yearInput() {
         try {
             String input = reader.readLine().trim();
