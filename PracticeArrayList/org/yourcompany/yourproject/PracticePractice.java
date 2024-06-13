@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 public class PracticePractice {
     private ArrayList<Book> library = new ArrayList<>();
-    private final ArrayList<Book> borrowers = new ArrayList<>();
+    private ArrayList<Book> borrowers = new ArrayList<>();
 
     private final String separator = "========================================";
     private int index;
