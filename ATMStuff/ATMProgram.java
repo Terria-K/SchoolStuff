@@ -156,7 +156,7 @@ public class ATMProgram {
             c = input.charAt(0);
             return c;
         } catch (IOException e) {
-            System.out.println("Something went wrong.");
+            System.out.print("Something went wrong, please try again >>: ");
             return charInput();
         }
     }
@@ -172,7 +172,7 @@ public class ATMProgram {
 
             return input;
         } catch (IOException e) {
-            System.out.println("Something went wrong.");
+            System.out.print("Something went wrong, please try again >>: ");
             return stringInput();
         }
     }
@@ -191,7 +191,10 @@ public class ATMProgram {
 
             return num;
         } catch (IOException e) {
-            System.out.println("Something went wrong.");
+            System.out.print("Something went wrong, please try again >>: ");
+            return numberInput();
+        } catch (NumberFormatException e) {
+            System.out.print("Input must be a number >>: ");
             return numberInput();
         }
     }
